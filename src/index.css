@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+a {
+  text-decoration: none !important;
+   color: inherit; 
+}
+
+a:hover {
+  background-color: rgb(53, 53, 83);
+  color: white;
+  cursor: pointer;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input {
+  display: block;
+  margin-bottom: 1em;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
+}
+
+
+input:focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 0 5px rgb(88, 88, 93);
+}
+
+.registerContainer > h1 {
+  text-transform: uppercase;
+  color: rgb(85, 86, 94);
+}
+
+.register {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  color: rgb(85, 86, 94);
+}
+
+.registerContainer {
+  border: 2px solid grey;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+}
+
+.btn {
+  background: none;
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  font-weight: 600;
+  margin: 1em;
+}
+
+.btn:hover {
+  background-color: rgb(54, 52, 52);
+  color: white;
+}
+
+table,td,tr,th {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.home {
+  margin: 2em;
+}

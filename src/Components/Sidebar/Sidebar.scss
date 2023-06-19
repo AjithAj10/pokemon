@@ -1,0 +1,30 @@
+.sidebar {
+    width: 100%;
+    background-color: rgb(243, 242, 242);
+    height: auto;
+    position: fixed;
+    margin-top: -1.24em;
+    z-index: 3;
+    padding: 1.12em 2em;
+    border-bottom: 2px solid black;
+    display: flex;
+    //justify-content: space-around;
+}
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select{
+    min-height: 0.5em !important;
+    height: 10px !important;
+}
+
+.link {
+    font-weight: 700;
+}
+
+.typeFilter {
+    margin-left: 2em;
+}
+
+.link:hover {
+    background : none;
+    color: rgb(67, 166, 123);
+}
