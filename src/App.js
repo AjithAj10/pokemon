@@ -14,12 +14,13 @@ function App() {
   const type = useSelector((state) => state.type.data);
   const allData = useSelector((state) => state.AllpokemonDetail.data);
 
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     getPokemon();
   }, []);
 
   
-  
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     let value = allData.filter((el) => el.types[0].type.name === type) 
     if (type === "All") {
