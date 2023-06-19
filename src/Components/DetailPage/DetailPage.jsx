@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import "./detailPage.scss";
 import pokeColor from "../CardColor";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
@@ -8,7 +8,6 @@ import { Grid } from "@mui/material";
 import MaleIcon from "@mui/icons-material/Male";
 import FemaleIcon from "@mui/icons-material/Female";
 import axios from "axios";
-import Sidebar from "../Sidebar/Sidebar";
 
 function DetailPage() {
   const pokemonDetails = useSelector((state) => state.detail.data);
@@ -52,7 +51,6 @@ function DetailPage() {
 
   return (
     <>
-      <Sidebar />
       <div
         className="detail-container"
         style={{ backgroundColor: pokeColor[pokemonDetails.name] }}
@@ -95,6 +93,7 @@ function DetailPage() {
               <img
                 className="pokeImage"
                 src={`https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${pokemonDetails.id}.svg`}
+                alt="pokemon"
               />
             </div>
           </div>
