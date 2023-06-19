@@ -9,16 +9,11 @@ function Bookmarks() {
   const [apiData, setapiData] = useState([]);
   const [search, setSearch] = useState("");
   const [alert, setAlert] = useState(false);
-  const bookmark = JSON.parse(localStorage.getItem('data'));
+  const bookmark = JSON.parse(localStorage.getItem("data"));
 
-  
   useEffect(() => {
     getPokemon();
-    let bookmarkData = apiData.filter((poke) => {
-      if (bookmark.includes(poke.name)) {
-        return poke;
-      }
-    });
+    let bookmarkData = apiData.filter((poke) => bookmark.includes(poke.name));
 
     setPokemonData(bookmarkData);
   }, []);
