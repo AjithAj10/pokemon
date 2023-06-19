@@ -18,13 +18,10 @@ function App() {
     getPokemon();
   }, []);
 
-  let value = allData.filter((el) => {
-    if (el.types[0].type.name === type) {
-      return el.name;
-    }
-  });
-
+  
+  
   useEffect(() => {
+    let value = allData.filter((el) => el.types[0].type.name === type) 
     if (type === "All") {
       setPokemonData(pokemonApiData);
       return;
@@ -32,13 +29,11 @@ function App() {
     if (type) {
       value = value.map((e) => e.name);
 
-      let data = pokemonApiData.filter((p) => {
-        return value.includes(p.name);
-      });
+      let data = pokemonApiData.filter((p) => value.includes(p.name));
       setPokemonData(data);
     }
+    return;
   }, [type]);
-
 
   const getPokemon = async () => {
     //api call
