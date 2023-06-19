@@ -3,7 +3,6 @@ import PokemonCard from "../PokemonCard";
 import Loader from "../Loader/Loader";
 import "../../App.scss";
 import Alert from "@mui/material/Alert";
-import { useSelector } from "react-redux";
 
 function Bookmarks() {
   const [pokemonData, setPokemonData] = useState([]);
@@ -20,7 +19,6 @@ function Bookmarks() {
         return poke;
       }
     });
-    console.log(bookmarkData, "bookmarked");
 
     setPokemonData(bookmarkData);
   }, []);
