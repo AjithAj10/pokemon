@@ -20,8 +20,8 @@ function PokemonCard({ pokemon }) {
     try {
       let data = await axios.get(pokemon.url);
       setData(data.data);
-
       if (storeAllData.length < 20) {
+        
         dispatch(allData(data.data));
       }
     } catch (e) {
@@ -47,6 +47,7 @@ function PokemonCard({ pokemon }) {
                 <img
                   className="pokeImage"
                   src={`https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${data.id}.svg`}
+                  alt="pokemon"
                 />
 
                 <Grid container>
