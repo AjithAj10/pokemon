@@ -12,8 +12,11 @@ function PokemonCard({ pokemon }) {
   const [data, setData] = useState();
 
   const dispatch = useDispatch();
+
+ /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     callPokemon();
+
   }, [pokemon]);
 
   const callPokemon = async () => {
