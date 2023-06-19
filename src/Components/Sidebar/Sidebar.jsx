@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Sidebar.scss";
-import { Link } from 'react-router-dom';
 import MenuBar from './MenuBar';
 import { useSelector } from 'react-redux';
 
