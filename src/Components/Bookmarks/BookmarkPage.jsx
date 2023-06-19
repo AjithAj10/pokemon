@@ -11,6 +11,7 @@ function Bookmarks() {
   const [alert, setAlert] = useState(false);
   const bookmark = JSON.parse(localStorage.getItem("data"));
 
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     getPokemon();
     let bookmarkData = apiData.filter((poke) => bookmark.includes(poke.name));
