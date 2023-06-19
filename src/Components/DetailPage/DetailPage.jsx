@@ -27,6 +27,7 @@ function DetailPage() {
     }
   };
 
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     speciesFn();
     if (bookmarks.includes(pokemonDetails.name)) {
@@ -44,9 +45,7 @@ function DetailPage() {
       JSON.stringify([...bookmarks, pokemonDetails.name])
     );
 
-    const bookmark3 = JSON.parse(localStorage.getItem('data'));
-
-    console.log(bookmark3);
+    
   };
 
   return (
