@@ -7,6 +7,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import detailReducer from "./Redux/pokemonDetail";
 import allDetailReducer from "./Redux/AllPokemon";
 import typeReducer from "./Redux/typeFilter";
+import bookmarkReducer from "./Redux/Bookmark";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DetailPage from "./Components/DetailPage/DetailPage";
@@ -15,6 +16,7 @@ import Bookmark from "./Components/Bookmarks/BookmarkPage";
 const store = new configureStore({
   reducer: {
     detail: detailReducer,
+    bookmark: bookmarkReducer,
     AllpokemonDetail: allDetailReducer,
     type : typeReducer,
   },

@@ -5,7 +5,6 @@ const AllPokemon = new createSlice({
   initialState: { data: [] },
   reducers: {
     allData: (state, action) => {
-     
       state.data.push(action.payload);
     },
   },
