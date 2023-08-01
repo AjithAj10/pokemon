@@ -106,7 +106,7 @@ function PokemonCard({ pokemon }) {
                 </Grid>
               </Grid>
 
-              <Link to="http://localhost:3000/pokemon-detail">
+              <Link to="/pokemon-detail">
                 <div className="pokeTypes">
                   {data.types.map((type, i) => {
                     return (
